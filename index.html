@@ -19,32 +19,11 @@
   <body>
     <!-- Navbar Start -->
     <nav class="navbar">
-      <div class="navbar-container">
-        <!-- Responsive Menu Start -->
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-
-        <div class="navbar-links-responsive">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Responsive Menu End -->
-
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
+      <div class="navbar_container">
+        <a class="navbar_link" href="#home">Home</a>
+        <a class="navbar_link" href="#about">About</a>
+        <a class="navbar_link" href="#projects">Portfolio</a>
+        <a class="navbar_link" href="#contact">Contact</a>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -53,23 +32,8 @@
     <section id="home" class="hero-section">
       <div class="hero-container">
         <div class="hero-text-container">
-          <h1>My Name is Mark Rose...</h1>
-          <h2>I am a Web Developer</h2>
-          <div class="social-media-icons-container">
-            <div class="social-icon">
-              <a href="https://github.com/Mark-R-5388" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <div class="social-icon">
-              <a
-                href="https://www.linkedin.com/in/mark-rose-600171195/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
+          <h1>I am Mark Rose</h1>
+          <p>Front End Web Developer</p>
         </div>
         <div class="hero-image-container">
           <img
@@ -85,45 +49,52 @@
     <!-- About Me Start -->
     <section id="about" class="about-section">
       <div class="about-section-container">
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            Hello, I am Mark Rose, a personal trainer turned web developer. My
-            love for web development all started while developing my own website
-            and app for my personal training business. While using Squarespace,
-            I often felt frustrated yet intrigued to learn the hows and whys of
-            building a website. Working from a mobile-first approach pushes me
-            to develop my creativity in my designs.
-          </p>
+        <div class="about-image-container">
+          <img
+            class="about-image"
+            src="/images/hero-image.jpg"
+            alt="my photo in color"
+          />
         </div>
-        <div class="about-skills">
-          <h2>Skills</h2>
-          <ul>
-            <li class="skill">
-              <p>HTML5</p>
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="skill">
-              <p>CSS3</p>
-              <i class="fab fa-css3"></i>
-            </li>
-            <li class="skill">
-              <p>Javascript</p>
-              <i class="fab fa-js"></i>
-            </li>
-            <li class="skill">
-              <p>React</p>
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="skill">
-              <p>Node.js</p>
-              <i class="fab fa-node-js"></i>
-            </li>
-            <li class="skill">
-              <p>Bootstrap</p>
-              <i class="fab fa-bootstrap"></i>
-            </li>
-          </ul>
+        <div class="about-content-container">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hello, I am Mark Rose, a personal trainer turned web developer. My
+              love for web development all started while developing my own
+              website and app for my personal training business. While using
+              Squarespace, I often felt frustrated yet intrigued to learn the
+              hows and whys of building a website. Working from a mobile-first
+              approach pushes me to develop my creativity in my designs.
+            </p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+              <li class="skill">
+                <p>HTML5</p>
+              </li>
+              <li class="skill">
+                <p>CSS3</p>
+              </li>
+              <li class="skill">
+                <p>Javascript</p>
+              </li>
+              <li class="skill">
+                <p>React</p>
+              </li>
+              <li class="skill">
+                <p>Node.js</p>
+              </li>
+              <li class="skill">
+                <p>Express.js</p>
+              </li>
+              <li class="skill">
+                <p>Next.js</p>
+              </li>
+              <li class="skill">
+                <p>Bootstrap</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -132,123 +103,14 @@
     <!-- Projects Start -->
     <section id="projects" class="projects-section">
       <div class="projects-section-container">
-        <div class="projects-title">
-          <h1>My Projects</h1>
-        </div>
-        <div class="projects-container">
-          <!-- Project Start -->
-          <div class="project">
-            <img class="project-image" src="/images/amvdesigns.JPG" alt="" />
-            <div class="project-information">
-              <p>AMV Designs</p>
-              <div class="links-container">
-                <a href="https://www.amvdesigns.net" target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a
-                  href="https://github.com/Mark-R-5388/painting-store-website"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End -->
-
-          <!-- Project Start -->
-          <div class="project">
-            <img
-              class="project-image"
-              src="/images/personal-training.JPG"
-              alt=""
-            />
-            <div class="project-information">
-              <p>Personal Training Website</p>
-              <div class="links-container">
-                <a
-                  href="https://personal-training-website.netlify.app"
-                  target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a
-                  href="https://github.com/Mark-R-5388/workout-website"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End -->
-
-          <!-- Project Start -->
-          <div class="project">
-            <img class="project-image" src="/images/simon.JPG" alt="" />
-            <div class="project-information">
-              <p>Simon Game</p>
-              <div class="links-container">
-                <a href="https://simon-game-53.netlify.app" target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a
-                  href="https://github.com/Mark-R-5388/simon-game"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End -->
-
-          <!-- Project Start -->
-          <div class="project">
-            <img class="project-image" src="/images/hangman.JPG" alt="" />
-            <div class="project-information">
-              <p>Hangman Game</p>
-              <div class="links-container">
-                <a href="https://rose-hangman-game.netlify.app" target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a
-                  href="https://github.com/Mark-R-5388/hangman-game"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End -->
-
-          <!-- Project Start -->
-          <div class="project">
-            <img
-              class="project-image"
-              src="/images/meditation-app.JPG"
-              alt=""
-            />
-            <div class="project-information">
-              <p>Meditation App</p>
-              <div class="links-container">
-                <a
-                  href="https://meditation-timer-app.netlify.app/"
-                  target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a
-                  href="https://github.com/Mark-R-5388/meditation-app"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End -->
-        </div>
+        <h2 class="title">My Projects</h2>
+        <div class="projects-container"></div>
       </div>
     </section>
     <!-- Projects End -->
 
     <!-- Contact Me Start -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="contact-container">
         <div class="contact-header">
           <h2>Contact Me</h2>
@@ -269,17 +131,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact Me End -->
 
     <!-- Footer Start -->
-    <footer id="footer">
+    <!-- <footer id="footer">
       <div class="footer-container">
         <div class="footer-text">
           <h2>Mark Rose Web Developer &copy 2021</h2>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Footer End -->
 
     <!-- Javascript -->
