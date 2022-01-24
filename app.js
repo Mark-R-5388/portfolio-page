@@ -1,11 +1,3 @@
-// NavBar Hamburger Modal
-// const toggleButton = document.querySelector('.toggle-button')
-// const navbarLinks = document.querySelector('.navbar-links-responsive')
-
-// toggleButton.addEventListener('click', () => {
-//   navbarLinks.classList.toggle('visible')
-// })
-
 const projects = [
   {
     name: "Hangman Game",
@@ -58,20 +50,4 @@ projects.forEach(function (project) {
             </div>
     `;
   projectsContainer.appendChild(projectCard);
-  // const projectImageContainer = document.createElement('div')
-  // projectImageContainer.classList.add('.project-image-container')
-
-  // const projectImage = document.createElement('img')
-  // projectImage.classList.add('.project-image')
-  // projectImage.src = project.src
-  // projectImage.alt = project.alt
-
-  // const projectContent = document.createElement('.project-content')
-  // const projectContentLink = document.createElement('a')
-  // projectContentLink.href = "#"
-  // projectContentLink.textContent = project.name
-
-  // projectContent.appendChild(projectContentLink)
-  // projectImageContainer.appendChild(projectImage)
-  // projectCard.appendChild(projectImageContainer)
 });

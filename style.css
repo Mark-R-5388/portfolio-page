@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-/* Global Variables */
-:root {
-  /* Colors */
-  --primary-background: #003b88;
-  --bright-color: #53be01;
-  --text-color: #212121;
-  --background-white: #ffffff;
-
-  /* Font */
-}
 
 /* Portfolio CSS */
 * {
@@ -25,16 +15,17 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--background-white);
+  color: #ffffff;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
 
 /* Navbar start */
 .navbar {
-  background: var(--primary-background);
-  color: var(--background-white);
+  background: #003b88;
+  color: #ffffff;
   position: sticky;
+
   top: 0px;
   width: 100%;
   height: 5rem;
@@ -55,13 +46,13 @@ a {
   font-size: 1.75rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar_link {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .navbar_link {
     font-size: 0.75rem;
   }
@@ -71,7 +62,7 @@ a {
 /* Hero Section Start */
 .hero-section {
   width: 100%;
-  background: var(--primary-background);
+  background: #003b88;
 }
 .hero-container {
   max-width: 1200px;
@@ -120,7 +111,7 @@ a {
 
   object-fit: cover;
 }
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
   .hero-container {
     flex-direction: column;
   }
@@ -129,7 +120,7 @@ a {
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .hero-text-container {
     padding: 1.5em;
   }
@@ -146,7 +137,7 @@ a {
 /* About Section Start */
 .about-section {
   width: 100%;
-  background: var(--background-white);
+  background: #ffffff;
 }
 .about-section-container {
   padding: 2.5em 0;
@@ -181,7 +172,7 @@ a {
 
 .about-text {
   border: 1px solid black;
-  background: var(--background-white);
+  background: #ffffff;
   padding: 1rem 1.5rem;
   max-width: 30rem;
   line-height: 1.75;
@@ -193,11 +184,11 @@ a {
 }
 .about-text h2 {
   font-size: 2.5rem;
-  color: var(--text-color);
+  color: #212121;
 }
 .about-text p {
   font-size: 1.25rem;
-  color: var(--text-color);
+  color: #212121;
 }
 .skills-list {
   width: 90%;
@@ -211,7 +202,7 @@ a {
   margin-left: 0.5em;
 }
 
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
   .about-section-container {
     flex-direction: column;
   }
@@ -225,7 +216,7 @@ a {
 
 .projects-section {
   width: 100%;
-  background: var(--primary-background);
+  background: #003b88;
 }
 
 .title {
@@ -289,12 +280,12 @@ a {
   text-align: center;
 }
 .project-content a {
-  color: var(--text-color);
+  color: #212121;
   font-size: 1.5rem;
   text-align: center;
 }
 
-@media (max-width: 715px) {
+@media screen and (max-width: 715px) {
   .projects-section-container {
     margin: 0 auto;
     padding: 2em 0;
@@ -313,7 +304,7 @@ a {
 /* Contact Start */
 .contact {
   width: 100%;
-  background: var(--background-white);
+  background: #ffffff;
 }
 .contact-container {
   margin: 2em auto;
@@ -322,7 +313,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: var(--background-white);
+  background: #ffffff;
   border: 2px solid rgb(116, 116, 116);
 }
 .email-section {
@@ -362,7 +353,7 @@ a {
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 515px) {
+@media screen and (max-width: 515px) {
   .contact-container {
     border: none;
   }
@@ -372,7 +363,7 @@ a {
 /* Footer Start */
 #footer {
   width: 100%;
-  background: var(--primary-background);
+  background: #003b88;
   padding: 1rem;
 }
 .footer-container {
@@ -382,46 +373,10 @@ a {
 }
 .footer-text {
   text-align: center;
-  color: var(--background-white);
+  color: #ffffff;
   letter-spacing: 1.55px;
 }
 .footer-text h2 {
   font-size: 1rem;
 }
 /* Footer End */
-
-/* Animations Start */
-@keyframes linkHoverContact {
-  0% {
-    color: var(--text-color);
-  }
-  100% {
-    color: var(--bright-color);
-  }
-}
-@keyframes linkHover {
-  0% {
-    color: var(--bright-color);
-  }
-  100% {
-    color: var(--background-white);
-  }
-}
-
-@keyframes linkHoverProject {
-  0% {
-    color: var(--bright-color);
-  }
-  100% {
-    color: var(--text-color);
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* Animations End */
